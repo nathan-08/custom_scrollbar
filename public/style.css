@@ -1,0 +1,44 @@
+
+:root {
+    --light1: #e6eed6;
+    --light2: #dde2c6;
+    --light3: #bbc5aa;
+    --red: #a82608;
+    --black: #090c02;
+}
+*{
+  box-sizing: border-box}
+BODY{
+  height: 100vh;
+  width: 100%;
+  background: steelblue;
+  overflow: hidden;
+  margin: 0;}
+.container{
+  height: 90vh;
+  width: 204px;
+  border: 1px solid var(--red);
+  position: relative;
+  top: 20px;
+  left: 20px;
+  overflow: hidden;}
+.scrollable-element{
+  background: var(--light2);
+  height: 100%;
+  width: 120%;
+  position: absolute;
+  overflow-y: auto;}
+.scrollbar{
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  height: 10px;
+  width: 12px;
+  border-radius: 8px;
+  background: var(--red);
+  opacity: .8;
+  width: 22px;
+  right: 0;
+  border-radius: 0;}
+.scrollbar:active{
+    opacity:1;}
